@@ -1,11 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Hero from "../components/Hero.astro";
+import SectionContainer from "../components/SectionContainer.astro";
 ---
 
 <Layout title="Transformando Vidas: Fundación []"
 description="Es una">
-	<main>
-		
+	<main class="px-4">
+		<SectionContainer class="py-16 md:py-36">
+		<Hero>
+			</slot>
+		</Hero>
+		</SectionContainer>
 	</main>
 </Layout>
